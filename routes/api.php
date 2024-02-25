@@ -21,7 +21,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::post('/event/create',[EventController::class, 'create'])->name('event.create')->middleware(["auth:api"]);
 Route::post('/event/{id}/update',[EventController::class, 'update'])->name('event.update');
-Route::post('/event/{id}/destroy',[EventController::class, 'destroy'])->name('event.destroy');
+Route::get('/event/{id}/destroy',[EventController::class, 'destroy'])->name('event.destroy')->middleware(["auth:api","admin"]);
 Route::post('/event/list',[EventController::class, 'show'])->name('event.list')->middleware(["auth:api","admin"]);
 
 Route::post('loginapi',[EventController::class,'login']);

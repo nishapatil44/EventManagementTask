@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "ec5e25dc-2c58-4c8a-a0d2-bc00b5513800",
+		"name": "EventApiCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10484326"
+	},
+	"item": [
+		{
+			"name": "Add Event",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODkyNDY4YzBhZWY5M2NkNGRmM2RlZmI4MDFjOGM3ZWVlZDg3ZDI0ZGU1ZGQyZTFiZDY4MjIyYTlhOGQyOTZkYTM3ZTFmZjhjYzQ3N2ZlOGMiLCJpYXQiOjE3MDg4NzgzNjIuMDM0OTA1LCJuYmYiOjE3MDg4NzgzNjIuMDM0OTA5LCJleHAiOjE3NDA1MDA3NjEuNjg2Mjk5LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.bRX_EnUeJSX5uSsVF835KRnZE1FUfE92XrFXPQ_kwN9_4wbix_-yGmYelXmUdTde8mtZ6oHO8n_iizYJaBhEeJVkki0D_3yLCLVpgGeFQWy6hDQMMsTdyD3n747iBP_190KxVfgLiilCBkSdXRU_Sax0KERECC0TGwZE2B24AscCDrtED7R72NDg0x76X5lHmp-mxVz11kj9o5HUOLfAQXgb40g7vtPZIeMTlQYoq9QpraE4Lmf2BnNYkCiZwwVIO0bggTre_gX9SE8iDx6BXI9TzxGGqVFs1fFMalO3TbiB7ekia7Xvra6_MX3R27YCVXyL4XR0rKu7e__YlDNTX3cYOkMG50KQPiytsmoFGsP3mHJmPM4mqA6InR2DxWuuxqaSucN2V0CljwJWfq0A50mkMQ1KQ8yqFIoeOYdf45lzlunGlZTRzg41FNI-eKx9Dxdjc3ssioIe87vxA3Y61ycdKhFo0GFEm9gi-NAZ7f1RjlNyRigpfiQVfYv_1tek7bYMRJ41vhZrUP72Y77TLnYdh11ySRrEACRP0LJTXU36es1kiXuPDzpPFRh3EPG4kndOolvRoUonCDkH5wQHg_5DNoG_M96lCS4viawhCMn6OMd9g4OHJC9hD78T5LXjTsie34rD3umxp1rmiQBYrE7EPrss32FUPFx0Z7_xqe4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Event1\",\r\n    \"description\": \"This is a test event1\",\r\n    \"category\": \"test1\",\r\n    \"photo\": \"d3JhcCB0aGUgY29kZSB0aGF0IG1pZ2h0IHRocm93IGFuIGV4Y2VwdGlvbiBpbiBhIHRyeS1jYXRjaCBibG9jayBhbmQgaGFuZGxlIHRoZSBleGNlcHRpb24gYW5kIGhhbmRsZSB0aGUgZXhjZXB0aW9uIGluIGNhdGNoIGJsb2NrDQoNCnRyeXsNCg0KfWNhdGNoKEV4Y2VwdGlvbiAkZSl7DQoJTG9nOjpkZWJ1ZygkZS0+Z2V0TWVzc2FnZSgpKTsNCgl0aHJvdyAgVmFsaWRhdGlvbkV4Y2VwdGlvbjo6d2l0aE1lc3NhZ2VzKFsNCgkJJ2F2dGFyJz0+IF9fKCdlaWVmaml3aicpOw0KfQ0KDQp0aHJvdyBWYWxpZGF0aW9uRXhjZXB0aW9uOjp3aXRoTWVzc2FnZXMoWw0KICAgICJEYXRlIG9mIEJpcnRoIG9mICIgLg0KICAgIHVjZmlyc3QoJGluc3VyZWRfbWVtYmVyWyJ0eXBlIl0pIC4NCiAgICAiIGluIFByb3Bvc2VyIERldGFpbHMgZG9lc24ndCBtYXRjaCB3aXRoICIgLg0KICAgIHVjZmlyc3QoJGluc3VyZWRfbWVtYmVyWyJ0eXBlIl0pIC4NCiAgICAiIEluc3VyZWQgRGV0YWlscyIsDQpdKTsNCg0KdGhyb3cgbmV3IFxFeGNlcHRpb24oIk1lbWJlciBEZXRhaWxzIGFyZSBNaXNzaW5nIik7DQoNCg0KLy8gQ3VzdG9tRXhjZXB0aW9uLnBocA0KDQpjbGFzcyBDdXN0b21FeGNlcHRpb24gZXh0ZW5kcyBFeGNlcHRpb24NCnsNCiAgICAvLyBZb3UgY2FuIGFkZCBjdXN0b20gcHJvcGVydGllcyBvciBtZXRob2RzIGlmIG5lZWRlZA0KfQ0KDQovLyBZb3VyIGFwcGxpY2F0aW9uIGNvZGUNCg0KZnVuY3Rpb24gc29tZUZ1bmN0aW9uKCR2YWx1ZSkgew0KICAgIGlmICgkdmFsdWUgPCAwKSB7DQogICAgICAgIHRocm93IG5ldyBDdXN0b21FeGNlcHRpb24oIlZhbHVlIG11c3QgYmUgZ3JlYXRlciB0aGFuIG9yIGVxdWFsIHRvIDAiKTsNCiAgICB9DQoNCiAgICAvLyBZb3VyIGNvZGUgbG9naWMgaGVyZQ0KfQ0KDQp0cnkgew0KICAgIHNvbWVGdW5jdGlvbigtNSk7DQp9IGNhdGNoIChDdXN0b21FeGNlcHRpb24gJGUpIHsNCiAgICBlY2hvICJDYXVnaHQgZXhjZXB0aW9uOiAiIC4gJGUtPmdldE1lc3NhZ2UoKTsNCn0NCg0KdHJ5IHsNCiAgICAvLyBTb21lIGNvZGUgdGhhdCBtYXkgdGhyb3cgYSBDdXN0b21FeGNlcHRpb24NCn0gY2F0Y2ggKEN1c3RvbUV4Y2VwdGlvbiAkZSkgew0KICAgIC8vIEhhbmRsZSB0aGUgY3VzdG9tIGV4Y2VwdGlvbg0KICAgIGVjaG8gIkN1c3RvbUV4Y2VwdGlvbjogIiAuICRlLT5nZXRNZXNzYWdlKCk7DQp9IGNhdGNoIChFeGNlcHRpb24gJGUpIHsNCiAgICAvLyBDYXRjaCBvdGhlciBleGNlcHRpb25zIGlmIG5lZWRlZA0KICAgIGVjaG8gIkV4Y2VwdGlvbjogIiAuICRlLT5nZXRNZXNzYWdlKCk7DQp9DQoNCkluIHRoaXMgZXhhbXBsZSwgaWYgdGhlIHZhbHVlIHBhc3NlZCB0byBzb21lRnVuY3Rpb24gaXMgbGVzcyB0aGFuIDAsIGl0IHdpbGwgdGhyb3cgYSBDdXN0b21FeGNlcHRpb24uIFRoZSBjYXRjaCBibG9jayB0aGVuIGNhcHR1cmVzIGFuZCBoYW5kbGVzIHRoZSBleGNlcHRpb24u\",\r\n    \"publish_datetime\": \"2024-02-24 07:57:00\",\r\n    \"until_datetime\": \"2024-03-01 07:57:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://championpracticaltask.test/api/event/create",
+					"protocol": "http",
+					"host": [
+						"championpracticaltask",
+						"test"
+					],
+					"path": [
+						"api",
+						"event",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Events",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNWM4ZjNiNDZlYjhkNDY3MzBkZTc5YzVmYzAxMjc5YmNlMDQ5MzE2MWQ1ZWFmZjVmODdkMGEyYjNmYWQ5NTE1ZmYxN2Q2NmU4N2Y4YTFiMGYiLCJpYXQiOjE3MDg4ODA1NTUuNjkxNjg2LCJuYmYiOjE3MDg4ODA1NTUuNjkxNjg5LCJleHAiOjE3NDA1MDI5NTUuNjgyNjg4LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.CpqMd5wvWuDjaxIDmIAWz8rhbMJbGLrB2m5xAULW2IGL3wbU8fmQoY4bHVJTBzhPVZnfoHIQjBkAXSvktzWqw7jnEegFVsR4LdmLdxmQWGUh2ss_0P2tZ7_9uMz3CzXxV3hUwLTROjvhxW4eSOio7Xx_bddd2d1WIVMr_oJS3hnujOFfBkKYJFi2Lzv_QAMjJFevjNsuTpgQ5kjTaEcFQQWRAgV9XCx-o5DzK72GJ3eb6naifUmJ773ilDssNR_s5TrnujXv7siZMxI031MFJHQo3jLiTU3Dmi9ynGAAEjPegQqgrJa0QafkWuV6pfTbrYP4dcU-WwVfKmYobIiDVmozAaXO9Gl5gXo_HQEUEcAZzHY9O0YoR7C2gG8hncsqSQvkXX2Gh9Xx4VcLhgMdEP0N81K31A5peeuoDOZfTL5McJXM4LGc3FWDGWW8GvI_Wb05sXSkvCGnDW6WrCFLDNR1GeLitJi-x_spwdYu3sSCf0QewJ0eydNg2ph-5dVMISr-e-YLbnYUrms9agTbH-6FALQ0KX3FLi_jdVo0WUmuNoCtqRs6pNwRdt6pWDAomNvCH7zXv5hMl_2XhpWxIl-mbSORC4SoRgHRHgXa-W4uArI11B7S1KhDP4Cj1ResXHFZbalOngwa9XcPDkuCMDgRnyUdFwT0xxYgocQswqI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"timezone\": \"Europe/Tallinn\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://championpracticaltask.test/api/event/list",
+					"protocol": "http",
+					"host": [
+						"championpracticaltask",
+						"test"
+					],
+					"path": [
+						"api",
+						"event",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login Api",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "username",
+						"value": "test@gmail.com",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "pass1234",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "test@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "pass1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://championpracticaltask.test/api/loginapi",
+					"protocol": "http",
+					"host": [
+						"championpracticaltask",
+						"test"
+					],
+					"path": [
+						"api",
+						"loginapi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete record",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNWM4ZjNiNDZlYjhkNDY3MzBkZTc5YzVmYzAxMjc5YmNlMDQ5MzE2MWQ1ZWFmZjVmODdkMGEyYjNmYWQ5NTE1ZmYxN2Q2NmU4N2Y4YTFiMGYiLCJpYXQiOjE3MDg4ODA1NTUuNjkxNjg2LCJuYmYiOjE3MDg4ODA1NTUuNjkxNjg5LCJleHAiOjE3NDA1MDI5NTUuNjgyNjg4LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.CpqMd5wvWuDjaxIDmIAWz8rhbMJbGLrB2m5xAULW2IGL3wbU8fmQoY4bHVJTBzhPVZnfoHIQjBkAXSvktzWqw7jnEegFVsR4LdmLdxmQWGUh2ss_0P2tZ7_9uMz3CzXxV3hUwLTROjvhxW4eSOio7Xx_bddd2d1WIVMr_oJS3hnujOFfBkKYJFi2Lzv_QAMjJFevjNsuTpgQ5kjTaEcFQQWRAgV9XCx-o5DzK72GJ3eb6naifUmJ773ilDssNR_s5TrnujXv7siZMxI031MFJHQo3jLiTU3Dmi9ynGAAEjPegQqgrJa0QafkWuV6pfTbrYP4dcU-WwVfKmYobIiDVmozAaXO9Gl5gXo_HQEUEcAZzHY9O0YoR7C2gG8hncsqSQvkXX2Gh9Xx4VcLhgMdEP0N81K31A5peeuoDOZfTL5McJXM4LGc3FWDGWW8GvI_Wb05sXSkvCGnDW6WrCFLDNR1GeLitJi-x_spwdYu3sSCf0QewJ0eydNg2ph-5dVMISr-e-YLbnYUrms9agTbH-6FALQ0KX3FLi_jdVo0WUmuNoCtqRs6pNwRdt6pWDAomNvCH7zXv5hMl_2XhpWxIl-mbSORC4SoRgHRHgXa-W4uArI11B7S1KhDP4Cj1ResXHFZbalOngwa9XcPDkuCMDgRnyUdFwT0xxYgocQswqI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://championpracticaltask.test/api/event/1/destroy",
+					"protocol": "http",
+					"host": [
+						"championpracticaltask",
+						"test"
+					],
+					"path": [
+						"api",
+						"event",
+						"1",
+						"destroy"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
